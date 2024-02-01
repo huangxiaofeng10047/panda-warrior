@@ -1,0 +1,6 @@
+node_modules/ #这个无需解释
+.vscode/ #如果你使用的是vscode编辑器，会产生一些相关文件，这些文件无需提交
+.nyc_output/ # nyc模块产生的一些文件
+coverage/ #测试覆盖率的静态资源也无需提交
+dist/打包后的目录，不提交
+*.d.ts #理由同上
