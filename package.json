@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "nodemon index.ts",
     "check": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
@@ -42,8 +42,7 @@
   },
   "dependencies": {
     "chai": "^4.2.0"
-  }
-  ,
+  },
   "nyc": {
     "extension": [
       "*.ts"
@@ -70,4 +69,3 @@
   "all": true,
   "check-coverage": true
 }
-
