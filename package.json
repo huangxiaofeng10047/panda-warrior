@@ -42,4 +42,31 @@
   "dependencies": {
     "chai": "^4.2.0"
   }
+  ,
+  "nyc": {
+    "extension": [
+      "*.ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run check",
+      "git add"
+    ]
+  },
+  "all": true,
+  "check-coverage": true
 }
+
