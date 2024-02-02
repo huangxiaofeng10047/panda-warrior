@@ -12,7 +12,8 @@
     "compile": "rollup -c --bundleConfigAsCjs",
     "lint-staged": "lint-staged",
     "test": "npm run compile && mocha",
-    "cover": "npm run compile && nyc mocha"
+    "cover": "npm run compile && nyc mocha",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,8 @@
     "@commitlint/cli": "^18.6.0",
     "@commitlint/config-angular": "^18.6.0",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
@@ -68,5 +71,11 @@
     ]
   },
   "all": true,
-  "check-coverage": true
+  "check-coverage": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+
 }
