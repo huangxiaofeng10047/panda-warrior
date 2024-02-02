@@ -10,6 +10,7 @@
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
     "compile": "rollup -c --bundleConfigAsCjs",
+    "lint-staged": "lint-staged",
     "test": "npm run compile && mocha",
     "cover": "npm run compile && nyc mocha"
   },
