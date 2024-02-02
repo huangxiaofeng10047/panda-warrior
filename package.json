@@ -48,7 +48,8 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "openai": "^4.26.0"
   },
   "nyc": {
     "extension": [
@@ -80,5 +81,4 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   }
-
 }
