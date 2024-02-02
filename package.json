@@ -2,7 +2,10 @@
   "name": "panda-warrior",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepare": "husky",
     "start": "nodemon index.ts",

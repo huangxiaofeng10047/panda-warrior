@@ -1,0 +1,22 @@
+language: node_js
+
+sudo: false
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+node_js: stable
+
+install:
+  - npm install -D
+  
+scripts:
+  - npm run cover
+
+deploy:
+  provider: npm
+  email: alberteinstein007@126.com
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
